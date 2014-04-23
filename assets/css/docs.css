@@ -424,7 +424,8 @@ body {
 .bs-sidebar .nav > li > a {
   display: block;
   color: #716b7a;
-  padding: 5px 20px;
+  padding: 2px 20px;
+  font-size: 12px;
 }
 .bs-sidebar .nav > li > a:hover,
 .bs-sidebar .nav > li > a:focus {
@@ -444,13 +445,34 @@ body {
 /* Nav: second level (shown on .active) */
 .bs-sidebar .nav .nav {
   display: none; /* Hide by default, but at >768px, show it */
-  margin-bottom: 8px;
 }
 .bs-sidebar .nav .nav > li > a {
-  padding-top:    3px;
-  padding-bottom: 3px;
   padding-left: 30px;
-  font-size: 90%;
+}
+
+.bs-sidebar .nav .nav.tags {
+padding-left:30px;
+}
+.bs-sidebar .nav .nav.tags>li {
+display: inline-block;
+width: 45%;
+overflow: hidden;
+height: 20px;
+text-overflow: ellipsis;
+white-space: nowrap;
+word-break: break-all;
+word-wrap: normal;
+padding-left: 10px;
+}
+
+.bs-sidebar .nav .nav.tags>li a{
+padding: 0 3px;
+}
+
+.bs-sidebar .nav.tags > .active > a, .bs-sidebar .nav.tags > .active:hover > a, .bs-sidebar .nav.tags > .active:focus > a {
+border-right:none;
+background-color:#eee;
+
 }
 
 /* Show and affix the side nav when space allows it */
