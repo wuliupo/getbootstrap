@@ -36,7 +36,7 @@
     <a class="sr-only" href="#content">Skip to main content</a>
 
     <!-- Docs master nav -->
-    <header class="navbar navbar-static-top bs-docs-nav" role="banner">
+    <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
@@ -75,22 +75,23 @@
 
 
     <!-- Page content of course! -->
-    <main class="bs-masthead" id="content" role="main">
+    <main class="bs-docs-masthead" id="content" role="main">
   <div class="container">
-    <span class="bs-booticon bs-booticon-lg bs-booticon-outline">B</span>
+    <span class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline">B</span>
     <!-- <h1>Bootstrap</h1> -->
     <p class="lead">The most popular front-end framework for developing responsive, mobile first projects on the web.</p>
     <p class="lead">
       <a href="getting-started#download" class="btn btn-outline-inverse btn-lg">Download Bootstrap</a>
     </p>
+    <p class="version">Currently v3.1.1</p>
     <div id="carbonads-container"><div class="carbonad"><div id="azcarbon">ads via Carbon</div></div></div>
 
   </div>
 </main>
 
-<div class="bs-featurette">
+<div class="bs-docs-featurette">
   <div class="container">
-    <h2 class="bs-featurette-title">Designed for everyone, everywhere.</h2>
+    <h2 class="bs-docs-featurette-title">Designed for everyone, everywhere.</h2>
     <p class="lead">Bootstrap makes front-end web development faster and easier. It's made for folks of all skill levels, devices of all shapes, and projects of all sizes.</p>
 
     <hr class="half-rule">
@@ -99,7 +100,7 @@
       <div class="col-sm-4">
         <img src="assets/img/sass-less.png" alt="Sass and Less support" class="img-responsive">
         <h3>Preprocessors</h3>
-        <p>In addition to vanilla CSS, Bootstrap includes support for the two most popular CSS preprocessors, <a href="./css/#less">Less</a> and <a href="./css/#sass">Sass</a>.</p>
+        <p>In addition to vanilla CSS, Bootstrap includes support for the two most popular CSS preprocessors, <a href="../css/#less">Less</a> and <a href="./css/#sass">Sass</a>.</p>
       </div>
       <div class="col-sm-4">
         <img src="assets/img/devices.png" alt="Responsive across devices" class="img-responsive">
@@ -120,14 +121,14 @@
   </div>
 </div>
 
-<div class="bs-featurette">
+<div class="bs-docs-featurette">
   <div class="container">
-    <h2 class="bs-featurette-title">Built with Bootstrap.</h2>
-    <p class="lead">Millions of amazing sites across the web are being built with Bootstrap. Get started on your own with our growing <a href="./getting-started/#examples">collection of examples</a> or by exploring some of our favorites.</p>
+    <h2 class="bs-docs-featurette-title">Built with Bootstrap.</h2>
+    <p class="lead">Millions of amazing sites across the web are being built with Bootstrap. Get started on your own with our growing <a href="../getting-started/#examples">collection of examples</a> or by exploring some of our favorites.</p>
 
     <hr class="half-rule">
 
-    <div class="row bs-featured-sites">
+    <div class="row bs-docs-featured-sites">
     
       <div class="col-sm-3">
         <a href="http://expo.getbootstrap.com/2013/08/06/coinbase/" target="_blank" title="Coinbase">
@@ -155,6 +156,28 @@
     
     </div>
 
+    <div class="row bs-docs-featured-sites">
+    
+      <div class="col-sm-3">
+        <a href="http://expo.getbootstrap.com/2014/02/12/little/" target="_blank" title="Little">
+          <img src="./expo/little.jpg" alt="Little" class="img-responsive">
+        </a>
+      </div>
+    
+      <div class="col-sm-3">
+        <a href="http://expo.getbootstrap.com/2014/02/10/engine-yard/" target="_blank" title="Engine Yard">
+          <img src="./expo/engine-yard.jpg" alt="Engine Yard" class="img-responsive">
+        </a>
+      </div>
+    
+      <div class="col-sm-3">
+        <a href="http://expo.getbootstrap.com/2014/02/04/webflow/" target="_blank" title="Webflow">
+          <img src="./expo/webflow.jpg" alt="Webflow" class="img-responsive">
+        </a>
+      </div>
+    
+    </div>
+
     <hr class="half-rule">
 
     <p class="lead">We showcase dozens of inspiring projects built with Bootstrap on the Bootstrap Expo.</p>
@@ -165,15 +188,15 @@
 
     <!-- Footer
 ================================================== -->
-<footer class="bs-footer" role="contentinfo">
+<footer class="bs-docs-footer" role="contentinfo">
   <div class="container">
-    <div class="bs-social">
-  <ul class="bs-social-buttons">
+    <div class="bs-docs-social">
+  <ul class="bs-docs-social-buttons">
     <li>
-      Star on GitHub
+      <a href="http://ghbtns.com/github-btn.html?user=twbs&repo=bootstrap&type=watch&count=true">Star on GitHub</a>
     </li>
     <li>
-      Fork on GitHub
+      <a href="http://ghbtns.com/github-btn.html?user=twbs&repo=bootstrap&type=fork&count=true">Fork on GitHub</a>
     </li>
     <li class="follow-btn">
       <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
@@ -188,7 +211,7 @@
     <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
     <p>Maintained by the <a href="https://github.com/twbs?tab=members">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
     <p>Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-    <ul class="footer-links muted">
+    <ul class="bs-docs-footer-links muted">
       <li>Currently v3.1.0</li>
       <li>&middot;</li>
       <li><a href="https://github.com/twbs/bootstrap">GitHub</a></li>
@@ -213,7 +236,7 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/jquery.min.js"></script>
 <script src="./dist/js/bootstrap.min.js"></script>
 <script src="./assets/js/docs.min.js"></script>
   </body>
