@@ -22,8 +22,6 @@
 <!-- Documentation extras -->
 <link href="../assets/css/docs.min.css" rel="stylesheet">
 <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
 <script src="../assets/js/ie-emulation-modes-warning.js"></script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -33,7 +31,7 @@
 <![endif]-->
 
 <!-- Favicons -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-precomposed.png">
 <link rel="icon" href="../assets/ico/favicon.ico">
 </head>
   <body>
@@ -43,7 +41,7 @@
     <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
   <div class="container">
     <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -124,13 +122,13 @@
   <h3 id="download-cdn">Bootstrap CDN</h3>
   <p>The folks over at <a href="http://www.maxcdn.com/">MaxCDN</a> graciously provide CDN support for Bootstrap's CSS and JavaScript. Just use these <a href="http://www.bootstrapcdn.com/">Bootstrap CDN</a> links.</p>
 <div class="highlight"><pre><code class="html"><span class="c">&lt;!-- Latest compiled and minified CSS --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;</span><span class="nt">&gt;</span>
 
 <span class="c">&lt;!-- Optional theme --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css&quot;</span><span class="nt">&gt;</span>
 
 <span class="c">&lt;!-- Latest compiled and minified JavaScript --&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></div>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></div>
 
   <h3 id="download-bower">Install with Bower</h3>
   <p>Install and manage Bootstrap's Less, CSS, JavaScript, and fonts using <a href="http://bower.io">Bower</a>.</p>
@@ -412,6 +410,13 @@ Copy any changes made here over to the README too. -->
 </div>
 
 <div class="bs-docs-section">
+  <h1 id="tools" class="page-header">Tools</h1>
+
+  <h2 id="tools-bootlint">Bootlint</h2>
+  <p><strong><a href="https://github.com/twbs/bootlint">Bootlint</a></strong> is an official Bootstrap HTML <a href="http://en.wikipedia.org/wiki/Lint_(software)">linter</a> tool. It automatically checks for several common HTML mistakes in webpages that are using Bootstrap in a fairly "vanilla" way. Vanilla Bootstrap's components/widgets require their parts of the DOM to conform to certain structures. Bootlint checks that instances of Bootstrap components have correctly-structured HTML. Consider adding Bootlint to your Bootstrap web development toolchain so that none of the common mistakes slow down your project's development.</p>
+</div>
+
+<div class="bs-docs-section">
   <h1 id="community" class="page-header">Community</h1>
 
   <p class="lead">Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.</p>
@@ -595,7 +600,7 @@ Copy any changes made here over to the README too. -->
   <p>As a heads up, we include this in all of Bootstrap's documentation and examples as a demonstration.</p>
 
   <h3 id="support-safari-percentages">Safari percent rounding</h3>
-  <p>As of Safari v7.0.1 for OS X and Safari for iOS v7.0.1, Safari's rendering engine has some trouble with the number of decimal places used in our <code>.col-*-1</code> grid classes. So if you have 12 individual grid columns, you'll notice that they come up short compared to other rows of columns. We can't do much here (<a href="https://github.com/twbs/bootstrap/issues/9282">see #9282</a>) but you do have some options:</p>
+  <p>The rendering engine of versions of Safari prior to v7.1 for OS X and Safari for iOS v8.0 had some trouble with the number of decimal places used in our <code>.col-*-1</code> grid classes. So if you had 12 individual grid columns, you'd notice that they came up short compared to other rows of columns. Besides upgrading Safari/iOS, you have some options for workarounds:</p>
   <ul>
     <li>Add <code>.pull-right</code> to your last grid column to get the hard-right alignment</li>
     <li>Tweak your percentages manually to get the perfect rounding for Safari (more difficult than the first option)</li>
@@ -635,6 +640,11 @@ Copy any changes made here over to the README too. -->
 <span class="p">})</span>
 <span class="nt">&lt;/script&gt;</span></code></pre></div>
   <p>Want to see an example? <a href="http://jsbin.com/OyaqoDO/2">Check out this JS Bin demo.</a></p>
+
+  <h3 id="support-validators">Validators</h3>
+  <p>In order to provide the best possible experience to old and buggy browsers, Bootstrap uses <a href="http://browserhacks.com">CSS browser hacks</a> in several places to target special CSS to certain browser versions in order to work around bugs in the browsers themselves. These hacks understandably cause CSS validators to complain that they are invalid. In a couple places, we also use bleeding-edge CSS features that aren't yet fully standardized, but these are used purely for progressive enhancement.</p>
+  <p>These validation warnings don't matter in practice since the non-hacky portion of our CSS does fully validate and the hacky portions don't interfere with the proper functioning of the non-hacky portion, hence why we deliberately ignore these particular warnings.</p>
+  <p>Our HTML docs likewise have some trivial and inconsequential HTML validation warnings due to our inclusion of <a href="#support-ie-compatibility-modes">X-UA-Compatible <code>&lt;meta&gt;</code> tags</a> to avoid Internet Explorer issues and our inclusion of a workaround for <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=654072">a certain Firefox bug</a>.</p>
 </div>
 
 <div class="bs-docs-section">
@@ -811,6 +821,12 @@ Copy any changes made here over to the README too. -->
   </ul>
 </li>
 <li>
+  <a href="#tools">Tools</a>
+  <ul class="nav">
+    <li><a href="#tools-bootlint">Bootlint</a></li>
+  </ul>
+</li>
+<li>
   <a href="#community">Community</a>
 </li>
 <li>
@@ -834,6 +850,7 @@ Copy any changes made here over to the README too. -->
     <li><a href="#support-browser-zooming">Browser zooming</a></li>
     <li><a href="#support-printing">Printer viewports</a></li>
     <li><a href="#support-android-stock-browser">Android stock browser</a></li>
+    <li><a href="#support-validators">Validators</a></li>
   </ul>
 </li>
 <li>
@@ -913,5 +930,7 @@ Copy any changes made here over to the README too. -->
 <script src="../assets/js/jquery.min.js"></script>
 <script src="../dist/js/bootstrap.min.js"></script>
 <script src="../assets/js/docs.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>

@@ -10,9 +10,9 @@
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 
 <title>
-
-    Bootstrap
-
+  
+    Bootstrap &middot; The world's most popular mobile-first and responsive front-end framework.
+  
 </title>
 
 <!-- Bootstrap core CSS -->
@@ -22,18 +22,16 @@
 <!-- Documentation extras -->
 <link href="./assets/css/docs.min.css" rel="stylesheet">
 <!--[if lt IE 9]><script src="./assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
 <script src="./assets/js/ie-emulation-modes-warning.js"></script>
 
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
   <script src="./assets/js/html5shiv.js"></script>
   <script src="./assets/js/respond.min.js"></script>
 <![endif]-->
 
 <!-- Favicons -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon" href="./assets/ico/apple-touch-icon.png">
 <link rel="shortcut icon" href="./assets/ico/favicon.ico">
   </head>
   <body class="bs-docs-home">
@@ -43,7 +41,7 @@
     <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
   <div class="container">
     <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -103,7 +101,7 @@
       <div class="col-sm-4">
         <img src="assets/img/sass-less.png" alt="Sass and Less support" class="img-responsive">
         <h3>Preprocessors</h3>
-        <p>Bootstrap ships with vanilla CSS, but its source code utilizes the two most popular CSS preprocessors, <a href="../css/#less">Less</a> and <a href="../css/#sass">Sass</a>. Quickly get started with precompiled CSS or build on the source.</p>
+        <p>Bootstrap ships with vanilla CSS, but its source code utilizes the two most popular CSS preprocessors, <a href="./css/#less">Less</a> and <a href="./css/#sass">Sass</a>. Quickly get started with precompiled CSS or build on the source.</p>
       </div>
       <div class="col-sm-4">
         <img src="assets/img/devices.png" alt="Responsive across devices" class="img-responsive">
@@ -127,27 +125,43 @@
 <div class="bs-docs-featurette">
   <div class="container">
     <h2 class="bs-docs-featurette-title">Built with Bootstrap.</h2>
-    <p class="lead">Millions of amazing sites across the web are being built with Bootstrap. Get started on your own with our growing <a href="../getting-started/#examples">collection of examples</a> or by exploring some of our favorites.</p>
+    <p class="lead">Millions of amazing sites across the web are being built with Bootstrap. Get started on your own with our growing <a href="./getting-started/#examples">collection of examples</a> or by exploring some of our favorites.</p>
 
     <hr class="half-rule">
+
+    <div class="row bs-docs-featured-sites">
+    
+      <div class="col-xs-6 col-sm-3">
+        <a href="http://expo.getbootstrap.com/2014/10/29/lyft/" target="_blank" title="Lyft">
+          <img src="./expo/lyft-thumb.jpg" alt="Lyft" class="img-responsive">
+        </a>
+      </div>
+    
+      <div class="col-xs-6 col-sm-3">
+        <a href="http://expo.getbootstrap.com/2014/09/30/vogue/" target="_blank" title="Vogue">
+          <img src="./expo/vogue-thumb.jpg" alt="Vogue" class="img-responsive">
+        </a>
+      </div>
+
+      <div class="col-xs-6 col-sm-3">
+        <a href="http://expo.getbootstrap.com/2014/03/13/riot-design/" target="_blank" title="Riot Design">
+          <img src="./expo/riot-thumb.jpg" alt="Riot Design" class="img-responsive">
+        </a>
+      </div>
+
+      <div class="col-xs-6 col-sm-3">
+        <a href="http://expo.getbootstrap.com/2014/02/12/newsweek/" target="_blank" title="Newsweek">
+          <img src="./expo/newsweek-thumb.jpg" alt="Newsweek" class="img-responsive">
+        </a>
+      </div>
+    
+    </div>
 
     <div class="row bs-docs-featured-sites">
 
       <div class="col-sm-3">
         <a href="http://expo.getbootstrap.com/2014/02/24/redantler/" target="_blank" title="Red Antler">
           <img src="./expo/redantler.jpg" alt="Red Antler" class="img-responsive">
-        </a>
-      </div>
-
-      <div class="col-sm-3">
-        <a href="http://expo.getbootstrap.com/2014/03/13/riot-design/" target="_blank" title="Riot Design">
-          <img src="./expo/riot.jpg" alt="Riot Design" class="img-responsive">
-        </a>
-      </div>
-
-      <div class="col-sm-3">
-        <a href="http://expo.getbootstrap.com/2014/02/12/newsweek/" target="_blank" title="Newsweek">
-          <img src="./expo/newsweek.jpg" alt="Newsweek" class="img-responsive">
         </a>
       </div>
 
@@ -240,25 +254,25 @@
 </div>
 
 
-    <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-    <p>Maintained by the <a href="https://github.com/twbs?tab=members">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
+    <p>Designed and built with all the love in the world by <a href="https://twitter.com/mdo" target="_blank">@mdo</a> and <a href="https://twitter.com/fat" target="_blank">@fat</a>.</p>
+    <p>Maintained by the <a href="https://github.com/orgs/twbs/people">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
     <p>Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
     <ul class="bs-docs-footer-links muted">
-      <li>Currently v3.2.0</li>
+      <li>Currently v3.3.0</li>
       <li>&middot;</li>
       <li><a href="https://github.com/twbs/bootstrap">GitHub</a></li>
       <li>&middot;</li>
-      <li><a href="../getting-started/#examples">Examples</a></li>
+      <li><a href="./getting-started/#examples">Examples</a></li>
       <li>&middot;</li>
       <li><a href="../2.3.2/">v2.3.2 docs</a></li>
       <li>&middot;</li>
-      <li><a href="../about/">About</a></li>
+      <li><a href="./about/">About</a></li>
       <li>&middot;</li>
       <li><a href="./expo">Expo</a></li>
       <li>&middot;</li>
       <li><a href="./blog">Blog</a></li>
       <li>&middot;</li>
-      <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Issues</a></li>
+      <li><a href="https://github.com/twbs/bootstrap/issues">Issues</a></li>
       <li>&middot;</li>
       <li><a href="https://github.com/twbs/bootstrap/releases">Releases</a></li>
     </ul>
@@ -271,5 +285,7 @@
 <script src="./assets/js/jquery.min.js"></script>
 <script src="./dist/js/bootstrap.min.js"></script>
 <script src="./assets/js/docs.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
